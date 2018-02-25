@@ -17,6 +17,13 @@ body {
 	margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+
 /*================*/
 /* Banner         */
 /*================*/
@@ -27,6 +34,19 @@ body {
 	background-size: cover;
 	background-position: center;
 	height: 30rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	#banner {
+		height: 22rem;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	#banner {
+		height: 17rem;
+		background-position: 20%;
+	}
 }
 
 header {
@@ -40,6 +60,27 @@ header {
 	top: 1rem;
 	background-color: cadetblue;
 	justify-content: space-between;	
+}
+
+#menuMobile {
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.headingNav {
+		position: relative;
+		top: 0rem;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	#regular {
+		display: none;
+	}
+
+	#menuMobile {
+		display: inline-block;
+	}
 }
 
 ul {
@@ -80,6 +121,33 @@ header h3 {
 	margin-right: -2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+	#catchphrase h1 {
+		margin-top: 5rem;
+		font-size: 1.33rem;
+		padding: 0.75rem 4rem;		
+	}
+
+	.container #catchphrase {
+		margin-right: 2rem;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	#catchphrase h1 {
+		margin-top: 9rem;
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	#catchphrase h1 {
+		width: 100%;
+	}
+	.container #catchphrase {
+		margin: 0;
+	}
+}
+
 /*================*/
 /* Product Images */
 /*================*/
@@ -112,6 +180,27 @@ img {
 	max-width: 3.5rem;
 }
 
+@media only screen and (max-width: 533px) {
+	#products {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 3.77rem;
+	}
+
+	.thumbnail {
+		margin-right: 0;
+		padding-top: 1.54rem;
+		justify-content: space-around;
+
+	}
+
+	.description {
+		font-size: 0.77rem;
+	}
+}
+
 /*================*/
 /*Support         */
 /*================*/
@@ -120,6 +209,8 @@ img {
 	display: flex;	
 	margin-top: 3rem;
 }
+
+
 
 #supportingContent h2 {
 	background-color: cadetblue;
@@ -143,6 +234,30 @@ img {
 
 .content.philo {
 	margin-right: 5%;
+}
+
+@media only screen and (max-width: 533px) {
+	#supportingContent {
+		display: flex;
+		flex-direction: column;
+	}	
+
+	.content {
+		margin-bottom: 4rem;
+	}
+
+	.content,
+	.content h2 {
+		max-width: 100%;
+	}
+
+	.content.philo {
+		margin-right: 0;
+	}
+
+	.content h2 {
+		text-align: center;
+	}
 }
 
 /*================*/
@@ -172,6 +287,20 @@ footer.container {
 .footerImg {
 	height: 1.5rem;
 	padding-left: 4rem;
+}
+
+@media only screen and (max-width: 533px) {
+	.footer h3 {
+		display: none;
+	}
+
+	footer {
+		justify-content: center;
+	}
+
+	.footerImg {
+		padding: 0;
+	}
 }
 
 
