@@ -145,6 +145,35 @@ img {
 	margin-right: 5%;
 }
 
+/*================*/
+/*Footer          */
+/*================*/
+
+footer {
+	display: flex;
+	align-items: center;
+	background-color: azure;
+	height: 8.5rem;
+}
+
+.footer {
+	display: flex;
+	color: black;
+}
+
+.footer h3 {
+	padding-left: 1rem;
+}
+
+footer.container {
+	margin-top: 5rem;
+}
+
+.footerImg {
+	height: 1.5rem;
+	padding-left: 4rem;
+}
+
 
 
 
