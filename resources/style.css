@@ -1,0 +1,80 @@
+/*================*/
+/* Globals        */
+/*================*/
+
+html {
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+body {
+	font-family: "Helvetica", sans-serif;
+	color: white;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*================*/
+/* Banner         */
+/*================*/
+
+#banner {
+	background-image: url(./images/glasses-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 30rem;
+}
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+.headingNav {
+	display: flex;
+	position: relative;
+	top: 1rem;
+	background-color: cadetblue;
+	justify-content: space-between;	
+}
+
+ul {
+	display: flex;
+	align-items: center;	
+}
+
+.image {
+	height: 1.5rem;
+	padding-left: 2rem;
+}
+
+li {
+	padding: 1rem 2rem 1rem 0;
+}
+
+header h3 {
+	padding-left: 1rem;
+}
+
+#catchphrase {
+	background-color: white;
+	margin-top: 10rem;
+	border: 1px solid black;
+}
+
+#catchphrase h1 {
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.2;
+	color: black;
+	padding: 1.5rem 5rem;
+	text-align: right;
+}
+
+
+
+
